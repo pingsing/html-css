@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 색상속성 */
+    /* 1. 색상을 직접 지정하기
+    2. 16진수(HEX)를 지정
+    3. RGB()
+    4. RGBA() */
+    /* .colorstyle {
+      color: red;
+      color: rgb(226, 34, 155);
+      color: #4466ff;
+      color: rgba(0, 0, 0, 0.384);
+      background-color: rgba(214, 26, 26, 0.39);
+    } */
+    /* body {
+      background-color: bisque;
+      background-image: url(img/pikachu.jpg);
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-position: 100px 100px;
+      background-repeat: repeat-x;
+      background-repeat: repeat-y;
+      background-size: 200px 150px;
+    } */
+    body {
+      font-family: "나눔고딕";
+    }
+
+    .container {
+      position: relative;
+      background-image: url(img/apple_bg.jpg);
+      background-repeat: no-repeat;
+      width: 600px;
+      height: 400px;
+      padding: 20px;
+    }
+
+    .content {
+      position: absolute;
+      top: 300px;
+      width: 90%;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    h1 {
+      font-size: 30pt;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>하루 한 알의 사과는 의사를 멀리 한다.</h1>
+      </div>
+    </div>
+  </body>
+</html>
