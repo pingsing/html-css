@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--from, 작성하는 방식, 선택 방식-->
+    <!--fieldset, 웹 양식의 여러 컨트롤과 레이블(<label>)을 묶을 때 사용합니다.-->
+    <!--부모 <fieldset> 콘텐츠의 설명을 나타냅니다.-->
+    <!--input type 속성: text(기본타입), password, radio, checkbox, email, number, color, date-->
+    <!--required, 필수항목. 입력하지 않으면 넘어갈 수 없다.-->
+    <form method="" action="https://google.co.kr" name="member">
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="id">아이디(필수)</label>
+        <input
+          type="text"
+          name="id"
+          id="id"
+          autofocus
+          required
+          placeholder="하이픈 생략"
+        />
+        <!--text는 기본타입-->
+        <br />
+        <label for="pw">비밀번호(4~8글자 사이)</label>
+        <input type="password" name="pw" id="pw" maxlength="8" minlength="4" />
+        <br />
+        <label for="movietime">상영시간</label>
+        <input
+          type="text"
+          name="movietime"
+          id="movietime"
+          value="오전 08:00 ~ 12:00"
+          readonly
+        />
+      </fieldset>
+      <fieldset>
+        <legend>기본정보 선택</legend>
+        <!--라디오버튼-->
+        <!--하나만 고르게 할 수 있으며, 사용할 때는 name 속성이 모두 '동일'해야한다.-->
+        <!--라디오버튼은 체크를 하면 해제할 수 없다.-->
+        <input type="radio" name="subject" value="java" checked />JAVA
+        <input type="radio" name="subject" value="html" />HTML
+        <input type="radio" name="subject" value="sql" />SQL
+        <br />
+        <input type="radio" name="grade" value="1" />1학년
+        <input type="radio" name="grade" value="2" />2학년
+        <input type="radio" name="grade" value="3" checked />3학년
+        <br />
+        <!--체크박스-->
+        <!--하나만 고르게 할 수 있으며, 사용할 때는 name 속성이 모두 '동일'해야한다.-->
+        <!--체크박스는 체크하여도 해제할 수 있다.-->
+        <input type="checkbox" name="habby" value="축구" />축구
+        <input type="checkbox" name="habby" value="농구" />농구
+        <input type="checkbox" name="habby" value="야구" />야구
+      </fieldset>
+      <label for="email">이메일</label>
+      <input type="emali" name="email" id="emali" pattern="@" required />
+      <br />
+      <label for="order">주문수량</label>
+      <input type="number" name="order" id="order" />
+      <br />
+      <label for="colorsel">색상</label>
+      <input type="color" name="colorsel" id="colorsel" />
+      <br />
+      <label for="datestart">시작일</label>
+      <input type="date" name="dateselstart" id="datestart" />
+      <label for="dateend">종료일</label>
+      <input type="date" name="dateselend" id="dateend" />
+      <br />
+      <label for="datestart2">시작일</label>
+      <input type="datetime-local" name="dateselstart2" id="datestart2" />
+      <label for="dateend2">종료일</label>
+      <input type="datetime-local" name="dateselend2" id="dateend2" />
+      <br /><br />
+      <label for="job">직업선택</label>
+      <select name="job">
+        <option value="0">--선택--</option>
+        <option value="1">--기자--</option>
+        <option value="2">--개발자--</option>
+        <option value="3">--경호원--</option>
+      </select>
+      <br /><br />
+      <label for="content">상품소개</label>
+      <textarea
+        name="content"
+        id="content"
+        rows="10"
+        cosl="50"
+        placeholder="상품소개"
+      ></textarea>
+      <br /><br />
+      <label for="fileup">첨부파일</label>
+      <input type="file" multiple />
+      <!--버튼-->
+      <!--type 속성: submit, reset-->
+      <input type="submit" value="회원가입" />
+      <input type="reset" value="취소" />
+      <input
+        type="button"
+        value="메세지 실행"
+        onclick="alert('메세지 보여주기')"
+      />
+      <button
+        type="button"
+        value="메세지 실행"
+        onclick="alert('메세지 보여주기')"
+      >
+        메세지 실행2
+      </button>
+      <!--button/submit/reset-->
+    </form>
+  </body>
+</html>

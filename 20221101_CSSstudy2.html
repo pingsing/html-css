@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--CSS는 태그를 대상으로 효과를 적용한다.-->
+    <!--
+    1. 외부파일을 작성하는 방식(확장자 .css를 붙인다.) ex)mystyle.css
+    2. 내부에 <style></style> 형식으로 작성하는 방식
+    3. 특정 태그에 직접 작성하는 방식
+    4. 우선순위는 3 → 2 → 1 적용
+    -->
+    <style>
+      /*
+        선택자 {
+            속성:값;
+            속성:값;
+            속성:값;
+        }
+        */ /*CSS의 주석표시*/
+
+      /*
+      전체선택자
+      * {
+        color: aqua;
+      }
+      */
+
+      /*
+      태그 선택자
+      p {
+        font-size: 50px;
+      }
+      h1 {
+        font-size: 70px;
+      }
+      */
+
+      /* 클래스 선택자 */
+      .bluetext {
+        color: blue;
+      }
+      .redtext {
+        color: red;
+        font-size: 70px;
+      }
+      .textsize30 {
+        font-size: 30px;
+      }
+
+      /* 아이디 선택자 */
+      #textsize30 {
+        font-size: 30px;
+      }
+      #textsize50 {
+        font-size: 50px;
+      }
+      #aquatext {
+        color: aqua;
+      }
+
+      /* 그룹 선택자 */
+      /* h1,
+      h2,
+      span {
+        color: green;
+      } */
+
+      /* 선택자 우선순위: 작성 순서상 마지막을 적용한다. */
+      /* p {
+        color: blue !important;
+      }
+      p {
+        color: red;
+      } */
+
+      /* CSS의 상속 */
+      /* 일부 속성은 상속에서 제외된다. */
+      body {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p class="bluetext textsize30">첫번째 p태그 입니다.</p>
+    <p class="redtext">두번째 p태그 입니다.</p>
+    <p id="textsize30">세번째 p태그 입니다.</p>
+    <p id="textsize50">네번째 p태그 입니다.</p> -->
+
+    <p>다섯번째 p태그 입니다.</p>
+
+    <h1>h1태그 입니다.</h1>
+    <h2>h2태그 입니다.</h2>
+    <span>span태그 입니다.</span>
+  </body>
+</html>

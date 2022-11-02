@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap");
+      /* 글꼴 */
+      .fontstyle {
+        /* 글꼴 */
+        /* font-family: 궁서, 돋움; */
+
+        /* 웹 폰트 */
+        font-family: "Nanum Gothic", sans-serif;
+      }
+
+      /* 글자 크기
+      절대 크기: px, pt
+      상대 크기: em, % | 1em = 100%*/
+      /* p {
+        font-size: 30px;
+      } */
+      /* p {
+        font-size: 1em;
+      } */
+
+      /* 글자 굵기 */
+      /* p {
+        font-weight: bold;
+      }
+      p {
+        font-style: italic;
+      }
+      p{
+        font-size:100px;
+        font-family: 돋움;
+      }
+      p{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 100px;
+        font-family: 돋움;
+      } */
+
+      p {
+        color: red;
+      }
+
+      p {
+        text-decoration: none;
+        /* none, underline, overline, line-through */
+      }
+
+      /* 글자에 그림자 효과 */
+      /* text-shadow: 가로거리, 세로거리, 번짐, 그림자색상 */
+
+      .shadow1 {
+        text-shadow: 1px 1px;
+        color: orange;
+      }
+
+      .shadow2 {
+        text-shadow: 5px 5px 3px brown;
+      }
+
+      /* 글자간격 */
+      .letter {
+        letter-spacing: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS의 속성 -->
+    <!-- 기본 글자 입니다.-->
+    <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태 Permanent Marker</p>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="letter">HTML5</h1>
+  </body>
+</html>
