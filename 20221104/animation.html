@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* translate */
+
+    /* 이동 */
+    /* move */
+
+    /* .movex:hover{
+      transform: translateX(50px);
+    }
+    .movey:hover{
+      transform: translateY(30px);
+    }
+    .movexy:hover{
+      transform: translate(10px, 20px);
+    } */
+
+    /* 크기조절 */
+    /* scale */
+    .origin {
+      border: 1px solid black;
+      float: left;
+      margin: 40px;
+      perspective: 200px;
+    }
+    .scalex:hover {
+      transform: scaleX(1.2);
+    }
+    .scaley:hover {
+      transform: scaleY(1.2);
+    }
+    .scalexy:hover {
+      transform: scale(1.2);
+    }
+
+    /* 회전 */
+    /* rotate */
+    .rotatex:hover {
+      transform: rotateX(45deg);
+    }
+    .rotatey:hover {
+      transform: rotateY(45deg);
+    }
+    .rotatez:hover {
+      transform: rotateZ(45deg);
+    }
+
+    /* 변화 */
+    /* transition */
+    /* .tr1 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition-property: width, height;
+      transition-duration: 2s, 1s;
+      transition-property: background-color, transform, width, height;
+      transition-duration: 2s, 3s;
+      transition-delay: 1s;
+    } */
+
+    /* .tr1:hover {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      transform: rotate(180deg);
+    } */
+
+    /* 애니메이션 효과 */
+    /* animation-xxx */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      animation-name: change-bg;
+      animation-duration: 3s;
+    }
+    @keyframes change-bg {
+      /* from ~ to */
+      from {
+        background-color: aqua;
+        border: 1px solid black;
+      }
+      to {
+        background-color: blueviolet;
+        border: 2px solid;
+        border-radius: 50%;
+      }
+      /* 0% ~ 100% */
+      /* 
+      0% {
+
+      }
+      50% {
+
+      }
+      100% {
+
+      } 
+      */
+    }
+  </style>
+  <body>
+    <!-- <div class="origin">
+      <div class="rotatex">
+        <img src="../img/google_logo.png" alt="google" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotatey">
+        <img src="../img/google_logo.png" alt="google" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="rotatez">
+        <img src="../img/google_logo.png" alt="google" />
+      </div>
+    </div> -->
+    <!-- <div class="tr1"></div> -->
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 선택자 */
+      /*
+        1. 전체 선택자
+        2. 태그 선택자
+        3. 클래스 선택자
+        4. ID 선택자
+        5. 그룹 선택자
+        */
+
+      /*
+      * {
+      }
+
+      p {
+      }
+
+      .color {
+      }
+
+      #textsize {
+      }
+
+      h1, p {
+      }
+      */
+      /* 후손선택자 */
+      /* section ul {
+        border: 1px solid red;
+      } */
+
+      /* 자식선택자 */
+      /* section > p {
+        color: rgb(0, 26, 255);
+      } */
+
+      /* 형제선택자 */
+      /* 바로 아래 동생 */
+      /* p + ul {
+        background-color: aqua;
+      } */
+
+      /* 동생들 */
+      /* p ~ ul {
+        color: red;
+      } */
+
+      /* 속성선택자 */
+      /* a[href] {
+        background-color: yellow;
+      } */
+      /* a[target="_blank"] {
+        background-color: red;
+      } */
+      a {
+        text-decoration: none;
+      }
+      /* a 태그 */
+      /* 1. link
+      2. visited
+      3. hover
+      4. active */
+
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: red;
+      }
+      a:active {
+        color: chartreuse;
+      }
+      a:visited {
+        color: orange;
+      }
+
+      /* 상태선택자 */
+      input:checked + span {
+        color: orange;
+      }
+
+      /* 구조선택자 */
+      ul li {
+        float: left;
+        border: 1px solid #000;
+        list-style-type: none;
+        width: 50px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      li:nth-child(2n) {
+        background-color: red;
+      }
+      li:nth-child(2n + 1) {
+        background-color: blue;
+      }
+      li:first-child {
+        border-radius: 50px 0px 0px 50px;
+      }
+      li:last-child {
+        border-radius: 0px 50px 50px 0px;
+      }
+
+      p:hover {
+        color: orchid;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>one</li>
+      <li>one</li>
+      <li>one</li>
+      <li>one</li>
+      <li>one</li>
+      <li>one</li>
+    </ul>
+
+    <!-- <a href="http://www.naver.com">네이버</a>
+    <br />
+    <a href="http://www.daum.net">다음</a>
+    <br />
+    <a href="http://google.co.kr">구글</a>
+    <br />
+    <input type="radio" name="hobby" /><span>운동</span>
+    <input type="radio" name="hobby" /><span>독서</span> -->
+
+    <!-- <section id="container">
+      <p>1번p</p>
+      <ul>
+        <li>직접통화</li>
+        <li>문자보내기</li>
+        <li>
+          <p>2번p</p>
+          <ul>
+            <li>1인</li>
+            <li>2인</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#" target="_blank">HTML</a></li>
+        <li><a href="#">JAVA</a></li>
+      </ul>
+    </section> -->
+  </body>
+</html>
