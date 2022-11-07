@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You can do it, Let's go pokemon</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "나눔고딕";
+    }
+
+    .container {
+      width: 1000px;
+    }
+
+    header {
+      width: 100%;
+      height: 200px;
+      background-color: azure;
+      background-image: url(../img/pokemonlogo.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 600px;
+    }
+
+    header ul {
+      position: relative;
+    }
+
+    header ul .col-md-4 {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    header ul .col-md-4 .col-md-12 {
+      text-align: center;
+      font-size: 20px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!--class="container" → width: 1170-->
+      <!--class="container-fluid"-->
+      <header>
+        <!-- 상단 소개 부분 -->
+        <ul class="nav">
+          <div class="col-md-4">
+            <div class="col-md-12">
+              <li><a href="#">포켓몬에 관하여</a></li>
+            </div>
+            <div class="col-md-12">
+              <li><a href="#">포켓몬의 역사</a></li>
+            </div>
+            <div class="col-md-12">
+              <li><a href="#">포켓몬의 종류, 전국도감</a></li>
+            </div>
+            <div class="col-md-12">
+              <li><a href="#">포켓몬을 접하는 방법</a></li>
+            </div>
+          </div>
+        </ul>
+      </header>
+
+      <div class="col-md-12">
+        <!-- 중단 본문 및 배너 부분 -->
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>넌 누구를 데려갈 거니?</h3>
+                <img src="../img/pokemon3.jpg" />
+              </div>
+              <div class="col-md-6">
+                <h3>파이리</h3>
+                <img src="../img/pokemon01.png" />
+              </div>
+              <div class="col-md-6">
+                <h3>꼬부기</h3>
+                <img src="../img/pokemon03.png" />
+              </div>
+              <div class="col-md-6">
+                <h3>이상해씨</h3>
+                <img src="../img/pokemon02.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-12">
+                <img src="../img/pokemon1.png" />
+              </div>
+              <div class="col-md-12">
+                <img src="../img/pokemon2.png" />
+              </div>
+              <div class="col-md-12">
+                <img src="../img/pokemon3.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row">
+          <p>
+            ©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc.
+            TM, ®Nintendo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

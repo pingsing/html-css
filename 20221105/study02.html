@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+</head>
+<style>
+    .col-md-1,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8 {
+      border: 1px solid #000;
+    }
+    .row {
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+    .pad10{
+        padding: 10px;
+        background-color: azure;
+    }
+  </style>
+    <div class="container"> <!--class="container" → width: 1170-->
+        <div class="row">
+            <div class="col-md-8">col-md-8
+                <div class="row">
+                    <div class="col-md-4 pad10">12개 중에 4개 그리드</div>
+                    <div class="col-md-8 pad10">12개 중에 8개 그리드</div>
+                </div>
+            </div>
+            <div class="col-md-4">col-md-4
+                <div class="row">
+                    <div class="col-md-6 pad10">12개 중에 6개 그리드</div>
+                    <div class="col-md-6 pad10">12개 중에 6개 그리드</div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Gride offset -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pad10">col-md-5</div>
+            <div class="col-md-5 col-md-offset-2 pad10">col-md-5</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pad10">col-md-4</div>
+            <div class="col-md-7 col-md-offset-1 pad10">col-md-7</div>
+        </div>
+    </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
