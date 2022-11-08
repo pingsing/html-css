@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--class="container" → width: 1170-->
+      <!--class="container-fluid"-->
+      <!-- 탭형 네비게이션 -->
+
+      <h2 class="text-primary">탭형 네비게이션</h2>
+
+      <ul class="nav nav-tabs">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+
+      <h2 class="text-primary">탭형 네비게이션 액티브</h2>
+
+      <ul class="nav nav-tabs">
+        <li><a href="#">메뉴1</a></li>
+        <li class="active"><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+
+      <!-- 알약형 네비게이션 -->
+
+      <h2 class="text-primary">알약형 네비게이션</h2>
+
+      <ul class="nav nav-pills">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+
+      <h2 class="text-primary">알약형 네비게이션 액티브</h2>
+
+      <ul class="nav nav-pills">
+        <li><a href="#">메뉴1</a></li>
+        <li class="active"><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+
+      <br /><br />
+
+      <h2 class="text-primary">수직정렬 네비게이션</h2>
+
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">메뉴1</a></li>
+          <li class="active"><a href="#">활성화 된 메뉴2</a></li>
+          <li><a href="#">메뉴3</a></li>
+          <li><a href="#">메뉴4</a></li>
+        </ul>
+      </div>
+
+      <br /><br />
+
+      <div class="clearfix"></div>
+
+      <h2 class="text-primary">양쪽 끝 정렬</h2>
+
+      <ul class="nav nav-pills nav-justified">
+        <li><a href="#">메뉴1</a></li>
+        <li class="active"><a href="#">활성화 된 메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li class="disabled"><a href="#">비활성화 된 메뉴4</a></li>
+      </ul>
+
+      <br /><br />
+
+      <h2 class="text-primary">탭형 네비게이션 드롭다운</h2>
+
+      <ul class="nav nav-tabs">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" href="#"
+            >여기클릭
+            <span class="caret"></span>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">메뉴1</a></li>
+              <li><a href="#">메뉴2</a></li>
+              <li><a href="#">메뉴3</a></li>
+              <li class="divider"></li>
+              <li><a href="#">기타 메뉴</a></li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+
+      <br /><br />
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
